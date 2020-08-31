@@ -47,7 +47,7 @@ out_list = zip(film_name, film_type, film_first_time)
 # print(out_list)
 with open('maoyan_movie.csv', 'w', encoding='utf-8', newline='') as csvfile:
     writer = csv.writer(csvfile)
-    head = ['name', 'type', 'date']
+    head = ['Name', 'Type', 'Date']
     writer.writerow(head)
     for data in out_list:
         writer.writerow(data)
